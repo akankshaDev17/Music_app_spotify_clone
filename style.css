@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+    background-color:antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu',sans-serif;
+}
+.upload-section, .voice-search {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+#uploadBtn, #voiceSearchBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1db954;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#uploadBtn:hover, #voiceSearchBtn:hover {
+    background-color: #1ed760;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu',sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url("bg.jpg");
+background-size: cover;
+}
+
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+#myProgressBar{
+    width: 70vw;
+    cursor: pointer;
+    
+}
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor: pointer;
+}
+.songItem{
+    width: 500px;
+    display: flex;
+    height: 50px;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content:space-between ;
+    align-items: center;
+    border-radius: 30px;
+
+}
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+
+}
+.timestamp{
+    margin: 0 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.c{
+    margin-top: 74px;
+}
+.songInfo{
+    position: absolute;
+    left: 15vw;
+    font-family: 'Ubuntu',sans-serif;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        background-image: url('./bg.jpg'); /* Ensure background appears */
+        background-size: cover;          
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;                   /* Use flexbox */
+        flex-direction: column;          /* Stack content vertically */
+        align-items: center;             /* Center align items */
+        padding: 10px;                   /* Add some padding */
+    }
+
+    .songItemContainer {
+        width: 100%;                     /* Ensure full width for each song item */
+        margin: 10px 0;                  /* Add space between song items */
+    }
+
+    .songItem {
+        display: flex;                   /* Keep flex for layout */
+        flex-direction: row;             /* Arrange items in a row */
+        justify-content: space-between;  /* Space out items */
+        align-items: center;             /* Align items vertically */
+        padding: 10px;                   /* Add some padding */
+        background-color: rgba(255, 255, 255, 0.8); /* Add semi-transparent background */
+        border-radius: 10px;             /* Round corners */
+        text-align: left;                /* Align text to left */
+    }
+
+    .songItem img {
+        width: 50px;                     /* Resize images */
+        height: 50px;
+        margin-right: 10px;              /* Space between image and text */
+    }
+
+    .songName {
+        flex-grow: 1;                    /* Let song name take available space */
+        font-size: 1rem;                 /* Adjust font size */
+    }
+
+    .timestamp {
+        margin: 0;                       /* Reset margins */
+        font-size: 0.9rem;               /* Adjust timestamp font size */
+    }
+
+    .songlistplay {
+        display: flex;                   /* Align the play button */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom {
+        flex-direction: column;          /* Stack items in the bottom */
+        align-items: center;             /* Center items */
+        padding: 10px;                   /* Add padding */
+    }
+
+    #myProgressBar {
+        width: 90%;                      /* Reduce width for smaller screens */
+    }
+
+    .icons i {
+        margin: 0 5px;                   /* Add spacing between icons */
+    }
+}
