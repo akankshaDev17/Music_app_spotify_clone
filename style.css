@@ -10,26 +10,9 @@ body{
 nav{
     font-family: 'Ubuntu',sans-serif;
 }
-.upload-section, .voice-search {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
-}
 
-#uploadBtn, #voiceSearchBtn {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color: #1db954;
-    color: white;
-    cursor: pointer;
-    margin: 0 10px;
-}
 
-#uploadBtn:hover, #voiceSearchBtn:hover {
-    background-color: #1ed760;
-}
+
 nav ul{
     display: flex;
     align-items: center;
@@ -124,6 +107,30 @@ nav ul li{
     opacity: 0;
     transition: opacity 0.4s ease-in;
 }
+.voice-search {
+    margin-bottom: 20px;
+  }
+  
+  .voice-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+  }
+  
+  .voice-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .result-text {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+  }
 @media (max-width: 768px) {
     .container {
         width: 95%;
